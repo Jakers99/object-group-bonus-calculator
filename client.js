@@ -1,5 +1,4 @@
-const employees = [
-  {
+const employees = [{
     name: 'Atticus',
     employeeNumber: '2405',
     annualSalary: '47000',
@@ -40,4 +39,49 @@ const employees = [
 // This is not a race. Everyone on your team should understand what is happening.
 // Ask questions when you don't.
 
-console.log( employees );
+console.log(employees);
+
+function addEmployees(name, employeeNumber, annualSalary) {
+  for (let i = 0; i < employees.length; i++)
+    console.log()
+
+}
+
+
+function bonusCalculator(employee) {
+  let employeeBonus = {
+    name: employee.name,
+    bonusPercentage: 0,
+    totalCompensation: 0,
+    totalBonus: 0
+  }
+}
+
+function ratingPercentage (rating){
+  let percentage = 0;
+  if (rating <= 2){
+    percentage = 0
+  } else if (rating === 3){
+    percentage = 4;
+  } else if (rating === 4){
+    percentage = 6;
+  } else if (rating === 5){
+    percentage = 10;
+  }
+  return percentage;
+}
+
+function tenuredEmployee (employeeNumber){
+  let extraPercentage = 0;
+  if (employeeNumber.length === 4){
+    extraPercentage = 5;
+  } else {
+    extraPercentage = 0;
+  }
+  return extraPercentage;
+}
+
+
+
+
+// if else
